@@ -1,0 +1,99 @@
+/* *{
+    border: 2px solid black;
+} */
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.field{
+    position: relative;
+    border: 1vmin solid rgb(163, 102, 219);
+    border-bottom-left-radius: 5vmin;
+    border-bottom-right-radius: 5vmin;
+    width: 60vmin;
+    height: 60vmin;
+    background-color: rgb(163, 102, 219);
+    
+}
+.field_cell{
+    position: absolute;
+    height: 10vmin;
+    width: 10vmin;
+    
+}
+.field_cell_null{
+    background-color: rgb(105, 14, 190);
+    
+
+}
+.field_cell--tile{
+   
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    
+}
+button{
+    height: 10vmin;
+    width: 15vmin;
+    background-color: rgb(116, 231, 231);
+    
+}
+#modal{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+
+}
+#modal.modal--visiable{
+    visibility: visible;
+    opacity: 1;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(163, 102, 219);;
+    border-top-left-radius: 5vmin;
+    border-top-right-radius: 5vmin;
+    background-color: rgb(163, 102, 219);
+    opacity: 10;
+}
+.timer{
+    margin-left: 3vmin;
+    display: flex;
+    
+}
+.time{
+    margin-left: 2vmin;
+}
+.field_cell--tile{
+    
+    transition: left 0.5s ease,top 0.5s ease;
+
+
+}
+
